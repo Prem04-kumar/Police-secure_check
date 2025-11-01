@@ -38,7 +38,6 @@ async def get(self):
     try:
         await self.flush()
     except asyncio.CancelledError:
-        # Optionally log or ignore
         pass
 
 
@@ -161,6 +160,7 @@ stop duration: **{stop_duration}**
 vehicle number: **{vehicle_number}**.
 """)
             
+
 
 
 
